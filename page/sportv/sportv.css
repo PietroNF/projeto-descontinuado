@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Montserrat', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+
+   transition: all .2s linear;
+}
+
+body{
+ background-color: #222;
+ overflow-x: hidden;
+
+}
+
+a {
+  color: #ffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  max-width: 1200px;
+  margin:  0 auto;
+
+
+}
+main{
+ position: relative;
+
+
+
+}
+
+
+header{
+   background: #2222;
+  height:70px; 
+  border-bottom: 1px solid #ff0000;
+}
+
+
+
+
+.nav-channel{
+  position: absolute;
+    top: 80px;
+  left: -140%;
+  
+  
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 98;
+  max-width: 300px;
+  
+  }
+  
+  .nav-channel li {
+   margin-bottom: 50px;
+  }
+
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+   transition:  0.3s ease-in;
+   z-index: 100;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+position: absolute;
+margin-top: -250px;
+margin-left: 85px;
+  cursor: pointer;
+  
+
+ 
+}
+
+.mobile-menu div {
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin: 6px;
+  transition: 0.3s;
+  border-radius: 1000px;
+  
+}
+
+
+ 
+  .nav-list {
+    position:fixed ;
+    top: 0vh;
+left: -140%;
+    width: 300px;
+    height: 100vh;
+    background: #1f1f1f;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 98;
+    max-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  
+  }
+  .nav-list li {
+  border-bottom: 1px solid #333 ;
+  width: 268px;
+  height: 30px;
+  text-transform: capitalize;
+ margin-left: -20px;
+
+  }
+.nav-list li:hover{
+  background-color: #000;
+}
+
+  .mobile-menu {
+    display: block;
+    
+  }
+  nav i{
+    color: #ff0000;
+    font-size: 18px;
+    
+  }
+
+
+.nav-list.active {
+left:  0px;
+
+
+}
+
+.nav-list.active >  div {
+  left: 25px;
+   
+   
+   }
+
+
+
+
+.open {
+  opacity: 0.03;
+ 
+}
+
+.top{
+  background-color: #ff0000;
+  height: 55px;
+width: 300px;
+margin-left: -25.5px;
+position: absolute;
+background-color: #ff0000;
+height: 55px;
+width: 300px;
+top: 0;
+}
+.top p {
+font-size: 21px;
+  color: #fff;
+  font-weight: bold;
+margin-top: 15px;
+margin-left: 5px;
+text-transform: capitalize;
+}
+.top i{
+  z-index: 99;
+  position: absolute;
+  color: #fff;
+margin-top: -25px;
+margin-left: 250px;
+  font-size: 25px;
+}
+span{
+    color: #ff0000;
+}
+ img{
+height: 300px;
+width: 100%;
+}
+
+.video{
+height: 600px;
+  max-width: 1230px;
+  margin: 0 auto;
+  position: relative;  
+
+}
+.game-played{
+ background: no-repeat center center url(/img/sportv-logo.webp);
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+opacity: 0.2;
+
+}
+.video h3 {
+  color: #fff;
+ font-size: 18px;
+  position: absolute;
+  margin-left: 380px;;
+  margin-top: -90px;
+
+}
+.video span{
+  color: #fff;
+  position: absolute;
+  margin-top: -120px;
+  margin-left: 540px;
+}
+.canais-reco{
+  width: 135px;
+  height: 30px;
+  border: 1px solid #ff0000;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 380px;
+  color: #fff;
+  font-size: 14px;
+  padding-top: 4.5px;
+  padding-left: 5px;
+  font-weight: 500;
+  text-transform: capitalize;
+
+}
+.canais-reco-2{
+  width: 135px;
+  height: 30px;
+  border: 1px solid #ff0000;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 540px;
+  color: #fff;
+  font-size: 14px;
+  padding-top: 4.5px;
+text-align: center;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.canais-reco-3{
+  width: 135px;
+  height: 30px;
+  border: 1px solid #ff0000;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 700px;
+  color: #fff;
+  font-size: 14px;
+  padding-top: 4.5px;
+ text-align: center;
+  font-weight: 500;
+  text-transform: capitalize;
+  
+}
+.iframe-div{
+  border: 1px solid #ff0000;
+  max-width: 607px;
+background-color: #111;
+  margin:  0 auto;
+ 
+}
+
+
+iframe{
+  margin-top: 0px;
+  margin-left: 000px;
+ 
+}
+.canais-reco:hover{
+  background-color: #141414;
+  
+}
+
+
+.canais-reco-2:hover{
+  background-color: #141414;
+  
+}
+.canais-reco-3:hover{
+  background-color: #141414;
+ 
+}
+.btn-option-1{
+border: 1px solid #ff0000;
+height: 35px;
+width: 100px;
+margin-left: 100px;
+background-color: #222;
+cursor: pointer;
+color: #fff;
+font-weight: 500;
+text-transform: uppercase;
+border-radius: 10px;
+padding-top: 6px;
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.btn-option-2{
+  border: 1px solid #ff0000;
+  height: 35px;
+  width: 100px;
+  margin-left: 250px;
+  margin-top: -35px;
+  background-color: #222;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding-top: 6px;
+  text-align: center;
+  }
+  
+
+
+  
+.btn-option-3{
+  border: 1px solid #ff0000;
+  height: 35px;
+  width: 100px;
+  margin-left: 400px;
+  margin-top: -35px;
+  background-color: #222;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding-top: 6px;
+  text-align: center;
+  }
+  
+.social-media{
+  text-align: center;
+  color: #fff;
+  padding-bottom: 50px;
+  
+}
+.btn-option-1:hover{
+  background-color: #ff0000;
+}
+.btn-option-2:hover{
+  background-color: #ff0000;
+}
+.btn-option-3:hover{
+  background-color: #ff0000;
+}
